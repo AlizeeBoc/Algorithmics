@@ -1,24 +1,14 @@
 //Write an algorithm which receives an array of integers and prints the position of its minimum.
 
-const a = [365, 95421, -32, 524, 33, -589, 6543]
+let a = [365, 95421, -32, 524, 33, -589, 6543];
+let min = a[0]
+let indexmin = [0];
 
-function Position_Min (a) {
-    let min = a[0];
-    let index_min = 0;
-    for (let i = 1; i<a.length; i++) {
-        if (a[i]<min) {
-            min = a[i];
-            index_min = i;
-        }
+for (i = 0; i<a.length; i++) {
+    if (a[i] < a[0]) {
+        min = a[i];
+        indexmin=i
     }
-return (index_min);
 }
+console.log(indexmin)
 
-
-console.log(Position_Min(a));
-
-
-/*ou 
->>let index_min = Position_Min(a);    (variable peut avoir tout autre nom : index_min n'est stockée nulle part ailleurs qu'au sein de la fonction)
->>console.log(index_min);
-*/
