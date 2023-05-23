@@ -8,17 +8,9 @@ the numbers from -n to n
 
 the odd numbers from 1 to n */
 
+let n = 12
 
-for (I=1; I<=n; ++I);
-    print(I);
+for (I=1; I<=n; ++I) {
+    console.log(I)
+}
 
-for (I=1; I<=n;--I);
-    print(I)
-
-for (-n<=I<=n;++I);
-    print(I);
-
-for (I=1;I<=n;++I)
-    if($I%2!==o) {
-        output(I)
-    }
